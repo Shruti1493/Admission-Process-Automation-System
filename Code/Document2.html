@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        * {
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  color: #555;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  background: #8178d3;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.file_upload_list li .file_item {
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 15px 20px;
+}
+
+.file_item .format {
+  background: #8178d3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.file_item .file_progress {
+  width: calc(100% - 60px);
+  font-size: 16px;
+}
+
+.file_item .file_info,
+.file_item .file_size_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.file_item .file_info {
+  justify-content: space-between;
+}
+
+.file_item .file_progress .progress {
+  width: 100%;
+  height: 4px;
+  background: #efefef;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.file_item .file_progress .progress .inner_progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #8178d3;
+}
+
+.file_item .file_size_wrap .file_size {
+  margin-right: 15px;
+}
+
+.file_item .file_size_wrap .file_close {
+  border: 1px solid #8178d3;
+  color: #8178d3;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.file_item .file_size_wrap .file_close:hover {
+  background: #8178d3;
+  color: #fff;
+}
+
+.choose_file label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #7575af;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="title">
+            Upload Required Document
+        </div>
+        <div class="file_upload_list">
+            <ul>
+                <li>
+                    <div class="file_item">
+                        <div class="format">
+                            <p>PDF</p>
+                        </div>
+                        <div class="file_progress">
+                            <div class="file_info">
+                                <div class="file_name">
+                                    CET Marksheet
+                                    <input type="file" id="myFile" /> <br /><br />
+                                </div>
+
+                                <div class="file_size_wrap">
+                                    <div class="file_size">2KB</div>
+                                    <div class="file_close">X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="file_item">
+                        <div class="format">
+                            <p>PDF</p>
+                        </div>
+                        <div class="file_progress">
+                            <div class="file_info">
+                                <div class="file_name">
+                                    HSC Marksheet
+                                    <input type="file" id="myFile" /> <br /><br />
+                                </div>
+
+                                <div class="file_size_wrap">
+                                    <div class="file_size">2KB</div>
+                                    <div class="file_close">X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="file_item">
+                        <div class="format">
+                            <p>PDF</p>
+                        </div>
+                        <div class="file_progress">
+                            <div class="file_info">
+                                <div class="file_name">
+                                    SSC Marksheet
+                                    <input type="file" id="myFile" /> <br /><br />
+                                </div>
+
+                                <div class="file_size_wrap">
+                                    <div class="file_size">2KB</div>
+                                    <div class="file_close">X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="file_item">
+                        <div class="format">
+                            <p>PDF</p>
+                        </div>
+                        <div class="file_progress">
+                            <div class="file_info">
+                                <div class="file_name">
+                                    Income Certificate
+                                    <input type="file" id="myFile" /> <br /><br />
+                                </div>
+
+                                <div class="file_size_wrap">
+                                    <div class="file_size">2KB</div>
+                                    <div class="file_close">X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="file_item">
+                        <div class="format">
+                            <p>PDF</p>
+                        </div>
+                        <div class="file_progress">
+                            <div class="file_info">
+                                <div class="file_name">
+                                    Domicile
+                                    <input type="file" id="myFile" /> <br /><br />
+                                </div>
+
+                                <div class="file_size_wrap">
+                                    <div class="file_size">2KB</div>
+                                    <div class="file_close">X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="file_item">
+                        <div class="format">
+                            <p>JPG</p>
+                        </div>
+                        <div class="file_progress">
+                            <div class="file_info">
+                                <div class="file_name">
+                                    Photo
+                                    <input type="file" id="myFile" /> <br /><br />
+                                </div>
+
+                                <div class="file_size_wrap">
+                                    <div class="file_size">2KB</div>
+                                    <div class="file_close">X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="choose_file">
+            <label for="choose_file">
+                <span>
+                    <input type="submit" value="Proceed for Choices" />
+                </span>
+            </label>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application Upload</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #f5f5f5;
+      padding-top: 60px;
+    }
+
+    .panel-primary {
+      background-color: #ffffff;
+      border-color: #428bca;
+      box-shadow: 0px 0px 10px #428bca;
+    }
+
+    .panel-heading {
+      background-color: #428bca;
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .form-group {
+      margin: 20px 0px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .radio-inline label {
+      font-weight: normal;
+    }
+
+    .form-control {
+      height: 40px;
+      font-size: 16px;
+      border-radius: 0px;
+      box-shadow: none;
+      border: 2px solid #428bca;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border: 2px solid #428bca;
+    }
+
+    .btn-primary {
+      background-color: #428bca;
+      border-color: #428bca;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+
+    .btn-primary:hover {
+      background-color: #3276b1;
+      border-color: #285e8e;
+    }
+
+    hr {
+      border: 1px solid #725a5a;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h1>Application Form</h1>
+        </div>
+        <div class="panel-body">
+          <form action="Application.php" method="post">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" />
+            </div>
+
+            <div class="form-group">
+              <label for="M_Name">Last Name</label>
+              <input type="text" class="form-control" id="M_Name" name="M_Name" />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <div>
+                <label for="male" class="radio-inline"><input type="radio" name="gender" value="m"
+                    id="male" />Male</label>
+                <label for="female" class="radio-inline"><input type="radio" name="gender" value="f"
+                    id="female" />Female</label>
+                <label for="others" class="radio-inline"><input type="radio" name="gender" value="o"
+                    id="others" />Others</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="User_ID">User_ID</label>
+              <input type="text" class="form-control" id="User_ID" name="User_ID" />
+            </div>
+
+            <div class="form-group">
+              <label for="DOB">DOB</label>
+              <input type="date" class="form-control" id="DOB" name="DOB" />
+            </div>
+
+            <div class="form-group">
+              <label for="SSC">SSC</label>
+              <input type="text" class="form-control" id="SSC" name="SSC" />
+            </div>
+
+            <div class="form-group">
+              <label for="HSC">HSC</label>
+              <input type="text" class="form-control" id="HSC" name="HSC" />
+            </div>
+
+            <div class="form-group">
+              <label for="CET">CET</label>
+              <input type="text" class="form-control" id="CET" name="CET" />
+            </div>
+
+            <div class="form-group">
+              <label for="S_no">Phone Number of Student</label>
+              <input type="text" class="form-control" id="S_no" name="S_no" />
+            </div>
+
+            <div class="form-group">
+              <label for="M_no">Phone Number of Mother</label>
+              <input type="text" class="form-control" id="M_no" name="M_no" />
+            </div>
+
+            <div class="form-group">
+              <label for="F_no">Phone Number of Father</label>
+              <input type="text" class="form-control" id="F_no" name="F_no" />
+            </div>
+
+            <div class="form-group">
+              <label for="Address">Address</label>
+              <input type="text" class="form-control" id="Address" name="Address" />
+            </div>
+ 
+            <input type="submit" class="btn btn-primary" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

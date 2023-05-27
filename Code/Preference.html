@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .card-header {
+            background-color: #715ab0;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            padding: 1rem;
+        }
+        .card-body {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-label {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .form-control {
+            border-radius: 10px;
+            border-color: #CCCCCC;
+            box-shadow: none;
+            font-size: 18px;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #2874F0;
+        }
+        .btn-primary {
+            background-color: #5e4299;
+            border-color: #2874F0;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #217925;
+            border-color: #1E60C9;
+        }
+        select {
+            background-color: #237590; /* Light Blue */
+            color: #333; /* Text Color */
+            font-weight: bold; /* Bold Font */
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+
+                
+
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h4>Enter your Preferences Below</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form action="preference.php" method="POST">
+                        
+                        <div class="from-group mb-3" >
+                            <label for="">User_ID</label>
+                            <input type="text" name="User_ID" class="form control">
+                        </div>
+                        <div class="from-group mb-3" >
+                            <label for="">Rank</label>
+                            <input type="text" name="Rank" class="form control">
+                        </div>
+                        
+
+
+                        <div class="from-group mb-3">
+                            <label for="">Preference1</label>
+                            <select name="P_1" class="form-control preference-select">
+                                <option value="">--Select Preference 1--</option>
+                                <option value="CSE AIML">CSE AIML</option>
+                                <option value="DS">DS</option>
+                                <option value="CS">CS</option>
+                                <option value="EXTC">EXTC</option>
+                            </select>
+                        </div>
+                        
+                        <div class="from-group mb-3">
+                            <label for="">Preference2</label>
+                            <select name="P_2" class="form-control preference-select">
+                                <option value="">--Select Preference 2--</option>
+                                <option value="CSE AIML">CSE AIML</option>
+                                <option value="DS">DS</option>
+                                <option value="CS">CS</option>
+                                <option value="EXTC">EXTC</option>
+                            </select>
+                        </div>
+                        
+                        <div class="from-group mb-3">
+                            <label for="">Preference3</label>
+                            <select name="P_3" class="form-control preference-select">
+                                <option value="">--Select Preference 3--</option>
+                                <option value="CSE AIML">CSE AIML</option>
+                                <option value="DS">DS</option>
+                                <option value="CS">CS</option>
+                                <option value="EXTC">EXTC</option>
+                            </select>
+                        </div>
+                        
+                        <div class="from-group mb-3">
+                            <label for="">Preference4</label>
+                            <select name="P_4" class="form-control preference-select">
+                                <option value="">--Select Preference 4--</option>
+                                <option value="CSE AIML">CSE AIML</option>
+                                <option value="DS">DS</option>
+                                <option value="CS">CS</option>
+                                <option value="EXTC">EXTC</option>
+                            </select>
+                        </div>
+                        <button type="submit" name="save_select" class="btn btn-primary">Submit</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>

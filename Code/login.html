@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Enroll now</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .full-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .sub-page {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-heading {
+            margin-top: 0;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .form-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            font-size: 16px;
+            color: #333;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="form-box">
+                <div class="form">
+                    <form class="login-form" action="login.php" method="post">
+                        <center>
+                            <h1 class="main-heading">Login Form</h1>
+                        </center>
+                        <input type="text" placeholder="User_ID" required name="User_ID" />
+                        <input type="password" placeholder="Password" required name="Password" />
+                        <button>Login</button>
+                    </form>
+                    <p>Don't have an account yet? <a href="register.html">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
